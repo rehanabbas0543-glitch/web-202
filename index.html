@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History of Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo-circle">A</div>
+      <div>
+        <p class="eyebrow">History of Art</p>
+        <h1>Stories in Paint, Stone, and Light</h1>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#overview">Overview</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#movements">Movements</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section-hero" id="overview">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A journey through art history</p>
+        <h2>From cave paintings to contemporary masterpieces</h2>
+        <p>Discover the rhythms, rebels, and revolutions that shaped the visual world. Smooth transitions and immersive storytelling guide you through art's greatest moments.</p>
+        <a class="button" href="#timeline">Explore the timeline</a>
+      </div>
+      <div class="hero-card reveal">
+        <div class="hero-card-inner">
+          <p>Art is the lie that enables us to realize the truth. — Picasso</p>
+          <span>Quote of the day</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-grid section-highlight reveal">
+      <article>
+        <h3>Ancient Beginnings</h3>
+        <p>Stone, pottery, and early murals built the foundation for symbolic expression across cultures.</p>
+      </article>
+      <article>
+        <h3>Renaissance Rebirth</h3>
+        <p>A celebration of perspective, anatomy, and the human spirit that transformed European art.</p>
+      </article>
+      <article>
+        <h3>Modern Vision</h3>
+        <p>From impressionism to abstract expressionism, form and feeling became the artists' playground.</p>
+      </article>
+    </section>
+
+    <section class="timeline section-panel" id="timeline">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Timeline</p>
+        <h2>Key eras that changed the way we see art</h2>
+      </div>
+      <div class="timeline-grid">
+        <div class="timeline-card reveal" data-era="prehistoric" tabindex="0">
+          <span>30,000 BCE</span>
+          <h3>Prehistoric Art</h3>
+          <p>Click to learn how early people used cave walls to tell stories.</p>
+        </div>
+        <div class="timeline-card reveal" data-era="classical" tabindex="0">
+          <span>500 BCE</span>
+          <h3>Classical Antiquity</h3>
+          <p>Click to see how ancient sculpture and buildings looked balanced and calm.</p>
+        </div>
+        <div class="timeline-card reveal" data-era="renaissance" tabindex="0">
+          <span>1500</span>
+          <h3>High Renaissance</h3>
+          <p>Click to explore the art that taught us how to paint depth and people realistically.</p>
+        </div>
+        <div class="timeline-card reveal" data-era="impressionism" tabindex="0">
+          <span>1870</span>
+          <h3>Impressionism</h3>
+          <p>Click to feel how painters captured light, color, and everyday moments.</p>
+        </div>
+        <div class="timeline-card reveal" data-era="cubism" tabindex="0">
+          <span>1907</span>
+          <h3>Cubism</h3>
+          <p>Click to understand how artists broke objects into sharp shapes.</p>
+        </div>
+        <div class="timeline-card reveal" data-era="abstract" tabindex="0">
+          <span>1950</span>
+          <h3>Abstract Expressionism</h3>
+          <p>Click to discover how paint and motion became the story in itself.</p>
+        </div>
+      </div>
+
+      <div class="timeline-detail reveal" id="timeline-detail" hidden>
+        <button class="close-detail" aria-label="Close details">✕</button>
+        <div class="detail-content">
+          <img id="detail-image" src="" alt="Timeline detail image" />
+          <div class="detail-copy">
+            <p class="eyebrow" id="detail-era">Detail</p>
+            <h3 id="detail-title">Select an era to learn more</h3>
+            <p id="detail-description">Click a block above to see a plain-language explanation and a picture for each major art era.</p>
+            <ul id="detail-points"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movements section-panel" id="movements">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Movements</p>
+        <h2>Styles that shaped generations</h2>
+      </div>
+      <div class="movement-cards">
+        <article class="movement-card reveal">
+          <h3>Baroque</h3>
+          <p>Drama, contrast, and emotional intensity drew viewers into powerful scenes.</p>
+        </article>
+        <article class="movement-card reveal">
+          <h3>Surrealism</h3>
+          <p>Dream imagery and unexpected combinations explored the unconscious mind.</p>
+        </article>
+        <article class="movement-card reveal">
+          <h3>Minimalism</h3>
+          <p>Simple forms and pure materials asked us to focus on presence and space.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section-panel" id="gallery">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Visual moments worth lingering over</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <div class="gallery-overlay">Renaissance Mastery</div>
+        </div>
+        <div class="gallery-item reveal">
+          <div class="gallery-overlay">Impressionist Light</div>
+        </div>
+        <div class="gallery-item reveal">
+          <div class="gallery-overlay">Modern Geometry</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>History of Art • Crafted with motion, meaning, and a love of visual culture.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
